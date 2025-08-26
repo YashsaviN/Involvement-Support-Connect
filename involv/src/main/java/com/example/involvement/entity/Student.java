@@ -9,7 +9,7 @@ import jakarta.persistence.Id;
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     private String name;
     private String email;
@@ -22,7 +22,7 @@ public class Student {
         this.major = major;
     }
 
-    public int getId() { 
+    public Long getId() { 
         return id;
     }
     public String getName() { 
